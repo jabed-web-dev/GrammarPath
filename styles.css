@@ -27,3 +27,24 @@
   .lesson-title>p{font-size:16px;line-height:1.8}
   .lesson-meta{font-size:12px;flex-wrap:wrap}
 }
+
+/* Balanced reading typography: comfortable 16px body text on mobile and desktop. */
+.markdown-body{font-size:16px;line-height:1.8}
+.markdown-body h1{font-size:26px;line-height:1.4}
+.markdown-body h2{font-size:22px;line-height:1.45}
+.markdown-body h3{font-size:19px;line-height:1.45}
+.markdown-body h4{font-size:17px;line-height:1.45}
+.markdown-body p,.markdown-body li{font-size:16px;line-height:1.8}
+.markdown-body th,.markdown-body td{font-size:14px;line-height:1.7;padding:10px}
+.markdown-body blockquote{font-size:16px;line-height:1.8}
+@media(max-width:760px){
+  .markdown-body{font-size:16px;line-height:1.8;padding:19px 16px}
+  .markdown-body h1{font-size:26px;line-height:1.4}
+  .markdown-body h2{font-size:22px;line-height:1.45;margin-top:30px}
+  .markdown-body h3{font-size:19px;line-height:1.45;margin-top:24px}
+  .markdown-body h4{font-size:17px}
+  .markdown-body p,.markdown-body li{font-size:16px;line-height:1.8}
+  .markdown-body th,.markdown-body td{font-size:14px;line-height:1.7;padding:10px;min-width:95px}
+  .lesson-title h1{font-size:25px}
+  .lesson-title>p{font-size:15px;line-height:1.7}
+}
