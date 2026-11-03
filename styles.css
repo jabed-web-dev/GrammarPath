@@ -3,3 +3,27 @@
 @media(max-width:1100px){.chapter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-art{width:270px}.content{padding:25px}.topbar{padding:0 25px}}
 @media(max-width:760px){body{padding-bottom:67px}.sidebar{transform:translateX(-105%);transition:transform .25s;width:280px;box-shadow:var(--shadow)}.sidebar.open{transform:translateX(0)}.main-area{margin-left:0}.topbar{height:58px;padding:0 15px}.menu-btn{display:block}.breadcrumb{font-size:10px;flex:1;margin-left:12px}.top-actions{gap:8px}.avatar{display:none}.install-btn{font-size:10px;padding:7px 9px}.content{padding:16px 14px 30px}.hero{padding:25px 21px;min-height:260px}.hero h1{font-size:25px}.hero p{font-size:11px;max-width:340px}.hero-art{position:absolute;right:-80px;bottom:-35px;opacity:.27;transform:scale(.9)}.hero-copy{max-width:100%}.stats-grid{grid-template-columns:repeat(2,1fr);gap:9px;margin:13px 0 26px}.stat-card{padding:11px;gap:9px}.stat-icon{width:33px;height:33px}.stat-card strong{font-size:18px}.stat-card span{font-size:9px}.section-heading h2{font-size:17px}.chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.chapter-card{padding:11px}.chapter-title{font-size:12px}.chapter-card-bottom{font-size:8px}.category-grid{grid-template-columns:1fr}.category-card{padding:12px}.mobile-nav{position:fixed;display:grid;grid-template-columns:repeat(4,1fr);bottom:0;left:0;right:0;height:65px;padding:5px 8px max(5px,env(safe-area-inset-bottom));background:#101d35f5;border-top:1px solid var(--line);backdrop-filter:blur(15px);z-index:15}.mobile-nav button{background:transparent;border:0;color:#8291ad;font-size:9px;display:grid;justify-items:center;align-content:center;gap:2px}.mobile-nav button span{font-size:19px;line-height:1.2}.mobile-nav button.active{color:#b6aaff}.overlay.show{display:block;position:fixed;inset:0;background:#02081799;z-index:19}.progress-summary{padding:16px;gap:15px}.progress-ring{width:85px;height:85px}.progress-ring>div{width:68px;height:68px}.progress-ring b{font-size:19px}.progress-summary h2{font-size:15px}.progress-summary p{font-size:10px}.markdown-body{padding:19px 16px;font-size:12px}.lesson-title{padding:20px}.lesson-title h1{font-size:23px}.lesson-end{align-items:flex-start;flex-direction:column}.lesson-end .primary-btn{width:100%}.toolbar{flex-direction:column}.toolbar select{max-width:none;padding:10px}.page-heading h1{font-size:24px}footer span{float:none;display:block;margin-top:5px}}
 @media(max-width:380px){.chapter-grid{grid-template-columns:1fr}.hero h1{font-size:22px}.stats-grid{gap:7px}.stat-card{padding:9px}}
+
+/* Reading typography: larger, more comfortable lesson text */
+.markdown-body{font-size:17px;line-height:1.95}
+.markdown-body h1{font-size:30px}
+.markdown-body h2{font-size:25px}
+.markdown-body h3{font-size:21px}
+.markdown-body h4{font-size:19px}
+.markdown-body p,.markdown-body li{font-size:inherit;line-height:1.95}
+.markdown-body th,.markdown-body td{font-size:15px;line-height:1.8;padding:12px}
+.markdown-body blockquote{font-size:inherit;line-height:1.9}
+@media(max-width:760px){
+  .markdown-body{padding:22px 18px;font-size:19px;line-height:2}
+  .markdown-body h1{font-size:31px;line-height:1.4}
+  .markdown-body h2{font-size:26px;line-height:1.5;margin-top:34px}
+  .markdown-body h3{font-size:22px;line-height:1.5;margin-top:27px}
+  .markdown-body h4{font-size:20px}
+  .markdown-body p,.markdown-body li{font-size:19px;line-height:2}
+  .markdown-body ul,.markdown-body ol{padding-left:25px}
+  .markdown-body li{margin:9px 0}
+  .markdown-body th,.markdown-body td{font-size:16px;line-height:1.85;padding:12px;min-width:105px}
+  .lesson-title h1{font-size:27px}
+  .lesson-title>p{font-size:16px;line-height:1.8}
+  .lesson-meta{font-size:12px;flex-wrap:wrap}
+}
