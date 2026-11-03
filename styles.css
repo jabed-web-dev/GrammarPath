@@ -6,69 +6,14 @@
 
 
 /* Bookmark: immediate, clearly visible saved state */
-.bookmark {
-  width: 34px;
-  height: 34px;
-  display: inline-grid;
-  place-items: center;
-  border: 1px solid transparent;
-  border-radius: 9px;
-  transition: background-color .18s ease, color .18s ease,
-              border-color .18s ease, transform .18s ease;
-}
-.bookmark:hover {
-  background: #293653;
-  color: #ffd27a;
-}
-.bookmark:active { transform: scale(.92); }
-.bookmark.saved {
-  color: #ffd27a;
-  background: #493b25;
-  border-color: #8a6a35;
-  box-shadow: 0 0 0 2px #ffc66d18;
-}
-
-.reader-bookmark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  min-height: 36px;
-  padding: 6px 12px;
-  border: 1px solid var(--line);
-  border-radius: 9px;
-  background: var(--panel);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 600;
-  transition: background-color .18s ease, color .18s ease,
-              border-color .18s ease, transform .18s ease;
-}
-.reader-bookmark:hover {
-  border-color: #8b7cff;
-  color: #c5bdff;
-}
-.reader-bookmark:active { transform: scale(.97); }
-.reader-bookmark.saved {
-  color: #ffd27a;
-  background: #493b25;
-  border-color: #8a6a35;
-  box-shadow: 0 0 0 2px #ffc66d18;
-}
-
-.light .bookmark:hover {
-  background: #fff4dc;
-  color: #9b6815;
-}
-.light .bookmark.saved,
-.light .reader-bookmark.saved {
-  color: #86570c;
-  background: #fff2d5;
-  border-color: #e4bd70;
-  box-shadow: 0 0 0 2px #d9a44118;
-}
-.bookmark:focus-visible,
-.reader-bookmark:focus-visible {
-  outline: 2px solid var(--accent2);
-  outline-offset: 2px;
-}
+.bookmark{width:34px;height:34px;display:inline-grid;place-items:center;border:1px solid transparent;border-radius:9px;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.bookmark:hover{background:#293653;color:#ffd27a}
+.bookmark:active{transform:scale(.92)}
+.bookmark.saved{color:#ffd27a;background:#493b25;border-color:#8a6a35;box-shadow:0 0 0 2px #ffc66d18}
+.reader-bookmark{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:6px 12px;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--muted);font-size:12px;font-weight:600;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.reader-bookmark:hover{border-color:#8b7cff;color:#c5bdff}
+.reader-bookmark:active{transform:scale(.97)}
+.reader-bookmark.saved{color:#ffd27a;background:#493b25;border-color:#8a6a35;box-shadow:0 0 0 2px #ffc66d18}
+.light .bookmark:hover{background:#fff4dc;color:#9b6815}
+.light .bookmark.saved,.light .reader-bookmark.saved{color:#86570c;background:#fff2d5;border-color:#e4bd70;box-shadow:0 0 0 2px #d9a44118}
+.bookmark:focus-visible,.reader-bookmark:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
