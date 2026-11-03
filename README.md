@@ -68,3 +68,10 @@ No license has been specified. Add a license file if you want to grant others ex
 ---
 
 **Keep learning. One chapter at a time.** 🌱
+
+
+## Vocabulary structure
+The 500 vocabulary entries are organized by Part of Speech and related word groups across chapters 36–45: Nouns, Verbs, Adjectives, Adverbs & Prepositions, Pronouns & Question Words, Phrasal Verbs, Collocations, and Expressions.
+
+
+Vocabulary library: 500 entries across 10 Part-of-Speech and practical-use chapters.

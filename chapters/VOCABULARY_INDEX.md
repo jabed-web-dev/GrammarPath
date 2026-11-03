@@ -12,3 +12,6 @@
 - **43. Work, Delivery & Customer Service** — কাজ, ডেলিভারি ও গ্রাহকসেবা
 - **44. Essential Phrasal Verbs** — গুরুত্বপূর্ণ Phrasal Verb
 - **45. Common Collocations & Word Pairs** — স্বাভাবিক ইংরেজি শব্দজোড়া
+
+
+**Total vocabulary entries: 500 (240 existing + 260 additional).**
