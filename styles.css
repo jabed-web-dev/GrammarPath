@@ -71,7 +71,7 @@ html.no-scroll,html.no-scroll body{overflow:hidden}
 .fs-ctl{display:inline-flex;gap:8px;margin-left:auto}
 .fs-ctl+.reader-bookmark{margin-left:0}
 .fs-ctl button{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;min-width:38px;height:34px;font-weight:700;font-size:14px}
-.markdown-body{font-size:var(--lesson-fs,16px);line-height:1.85}
+.markdown-body{font-size:var(--lesson-fs,14px);line-height:1.85}
 .markdown-body table{font-size:.92em}
 /* larger small text */
 .brand small,.sidebar-bottom small,.side-label,.side-link em,.overall-number span,.chapter-number,.category-info small,footer,.result-count,.progress-category span,.settings-card p,.reader-top,.lesson-meta,.lesson-end p,.stat-card span,.float-chip,.chapter-card-bottom{font-size:12px}

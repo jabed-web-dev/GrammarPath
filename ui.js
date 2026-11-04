@@ -8,14 +8,14 @@ const P={
  '✦':'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16v4M17 18h4"/>',
  '✓':'<path d="M5 12.5l4.5 4.5L19 7.5"/>'};
 const svg=p=>`<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
-let fs=+localStorage.getItem('gp_fs')||16;
+const MIN=12,MAX=18;let fs=Math.min(MAX,Math.max(MIN,+localStorage.getItem('gp_fs')||14));
 const applyFs=()=>document.documentElement.style.setProperty('--lesson-fs',fs+'px');
 function refresh(){
   document.querySelectorAll('.side-link>span,.mobile-nav button>span,.stat-icon').forEach(el=>{const g=el.textContent.trim();if(P[g])el.innerHTML=svg(P[g])});
   const top=document.querySelector('.reader-top');
-  if(top&&!top.querySelector('.fs-ctl'))top.querySelector('.reader-bookmark')?.insertAdjacentHTML('beforebegin','<span class="fs-ctl"><button data-fs="-2" aria-label="লেখা ছোট করো">A−</button><button data-fs="2" aria-label="লেখা বড় করো">A+</button></span>');
+  if(top&&!top.querySelector('.fs-ctl'))top.querySelector('.reader-bookmark')?.insertAdjacentHTML('beforebegin','<span class="fs-ctl"><button data-fs="-1" aria-label="লেখা ছোট করো">A−</button><button data-fs="1" aria-label="লেখা বড় করো">A+</button></span>');
 }
-document.addEventListener('click',e=>{const b=e.target.closest('[data-fs]');if(!b)return;fs=Math.min(24,Math.max(14,fs+ +b.dataset.fs));localStorage.setItem('gp_fs',fs);applyFs();toast('লেখার আকার: '+fs+'px')});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-fs]');if(!b)return;fs=Math.min(MAX,Math.max(MIN,fs+ +b.dataset.fs));localStorage.setItem('gp_fs',fs);applyFs();toast(fs===MIN&&+b.dataset.fs<0?'সবচেয়ে ছোট আকার: '+fs+'px':fs===MAX&&+b.dataset.fs>0?'সবচেয়ে বড় আকার: '+fs+'px':'লেখার আকার: '+fs+'px')});
 const sb=document.getElementById('sidebar');
 new MutationObserver(()=>document.documentElement.classList.toggle('no-scroll',sb.classList.contains('open')&&innerWidth<=760)).observe(sb,{attributes:true,attributeFilter:['class']});
 new MutationObserver(refresh).observe(document.getElementById('content'),{childList:true,subtree:true});
