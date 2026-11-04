@@ -84,4 +84,4 @@ Vocabulary library: 500 entries across 10 Part-of-Speech and practical-use chapt
 - **Backup**: export/import progress, bookmarks and flashcard data as JSON.
 - Service worker now precaches all chapters (full offline) and refreshes them in the background. If you change any file, bump `CACHE` in `sw.js`.
 - Removed the unused duplicate 240-entry vocabulary chapters.
-- **Chapter quizzes** at the end of every lesson (chapters 1–45): 5 questions, 80% auto-completes the chapter. Grammar questions come from a hand-written bank in `quiz.js` plus the “ভুল → সঠিক” pairs in each chapter; vocabulary quizzes are generated from the chapter tables. Best scores are stored in `gp_quiz`.
+- **Chapter quizzes** at the end of every lesson (chapters 1–45): 5–6 questions, 80% auto-completes the chapter. Grammar questions come from a hand-written bank in `quiz.js` plus the “ভুল → সঠিক” pairs in each chapter; vocabulary quizzes are generated from the chapter tables. Best scores are stored in `gp_quiz`.
