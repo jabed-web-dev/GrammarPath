@@ -22,7 +22,7 @@ const vocabularyChapters = [
 chapters.push(...vocabularyChapters);
 const TOTAL_CHAPTERS = chapters.length;
 
-const categories=[['A. Word Classes','Word Classes & Word Forms','শব্দের শ্রেণি ও রূপ','01–08'],['B. Tense & Verbs','Tense & Verb System','Tense ও Verb System','09–13'],['C. Modifiers & Relations','Modification & Relationships','বর্ণনা ও সম্পর্ক','14–18'],['D. Phrases & Sentences','Phrases, Clauses & Sentences','Phrase, Clause ও Sentence','19–25'],['E. Voice & Reporting','Voice, Reporting & Conditions','Voice, Speech ও Condition','26–29'],['F. Accuracy & Advanced','Accuracy & Advanced Usage','শুদ্ধতা ও উন্নত ব্যবহার','30–35'],['G. Vocabulary','Vocabulary by Part of Speech','10 categories · 240 entries','36–45']];
+const categories=[['A. Word Classes','Word Classes & Word Forms','শব্দের শ্রেণি ও রূপ','01–08'],['B. Tense & Verbs','Tense & Verb System','Tense ও Verb System','09–13'],['C. Modifiers & Relations','Modification & Relationships','বর্ণনা ও সম্পর্ক','14–18'],['D. Phrases & Sentences','Phrases, Clauses & Sentences','Phrase, Clause ও Sentence','19–25'],['E. Voice & Reporting','Voice, Reporting & Conditions','Voice, Speech ও Condition','26–29'],['F. Accuracy & Advanced','Accuracy & Advanced Usage','শুদ্ধতা ও উন্নত ব্যবহার','30–35'],['G. Vocabulary','Vocabulary by Part of Speech','10 categories · 500 entries','36–45']];
 const state={view:'home',filter:'all',query:'',chapter:null};
 const completed=new Set(JSON.parse(localStorage.getItem('gp_completed')||'[]'));
 const bookmarks=new Set(JSON.parse(localStorage.getItem('gp_bookmarks')||'[]'));

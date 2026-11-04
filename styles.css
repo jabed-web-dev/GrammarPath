@@ -17,3 +17,30 @@
 .light .bookmark:hover{background:#fff4dc;color:#9b6815}
 .light .bookmark.saved,.light .reader-bookmark.saved{color:#86570c;background:#fff2d5;border-color:#e4bd70;box-shadow:0 0 0 2px #d9a44118}
 .bookmark:focus-visible,.reader-bookmark:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+
+/* Practice (flashcards & quiz) */
+.streak{padding:6px 10px;border-radius:999px;background:rgba(127,127,127,.18);font-weight:700;font-size:.85rem}
+.fc-meta{opacity:.7;margin:14px 0 8px;font-size:.9rem}
+.fc-card{padding:36px 20px;border-radius:20px;border:1px solid rgba(127,127,127,.35);background:rgba(127,127,127,.12);text-align:center;cursor:pointer;min-height:170px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.fc-card h2{margin:0;font-size:2rem}
+.fc-bn{font-size:1.3rem;font-weight:700;margin:6px 0 0}
+.fc-ex,.fc-hint{opacity:.8;margin:6px 0}
+.fc-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+.opts{display:grid;gap:10px;margin:16px 0}
+.opt{padding:14px;border-radius:14px;border:1px solid rgba(127,127,127,.4);background:rgba(127,127,127,.1);color:inherit;font:inherit;font-size:1.05rem;text-align:left;cursor:pointer}
+.opt.right{background:rgba(46,160,67,.35);border-color:#2ea043}
+.opt.wrong{background:rgba(229,83,75,.35);border-color:#e5534b}
+.mobile-nav{grid-template-columns:repeat(5,1fr)!important}
+
+/* Chapter quiz */
+.cquiz{margin:32px 0;padding:24px;border-radius:22px;border:1px solid rgba(124,92,255,.45);background:linear-gradient(135deg,rgba(124,92,255,.18),rgba(46,160,67,.10))}
+.cquiz h3{margin:6px 0 8px;font-size:1.3rem}
+.cq-bar{display:flex;gap:5px;margin:10px 0 18px}
+.cq-bar i{flex:1;height:7px;border-radius:5px;background:rgba(127,127,127,.3)}
+.cq-bar i.on{background:#7c5cff}.cq-bar i.ok{background:#2ea043}.cq-bar i.bad{background:#e5534b}
+.cq-q{font-size:1.2rem;font-weight:700;line-height:1.5;margin:6px 0 12px}
+.cq-exp{margin:14px 0;padding:14px;border-radius:14px;background:rgba(127,127,127,.16);line-height:1.6}
+.cq-result{text-align:center}
+.cq-score{font-size:3rem;font-weight:800;line-height:1.1}
+.cq-score.pass{color:#2ea043}.cq-score.fail{color:#e5534b}
+.opt:disabled{cursor:default}

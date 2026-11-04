@@ -3,7 +3,7 @@
 A mobile-first English Grammar learning PWA with Bangla-friendly explanations.
 
 ## Features
-- 35 organized grammar chapters
+- 45 chapters: 35 grammar + 10 vocabulary (500 entries)
 - Search, categories, bookmarks and learning progress
 - Dark and light themes
 - Installable Progressive Web App (PWA)
@@ -75,3 +75,13 @@ The 500 vocabulary entries are organized by Part of Speech and related word grou
 
 
 Vocabulary library: 500 entries across 10 Part-of-Speech and practical-use chapters.
+
+
+## New in this version
+- **Practice tab**: vocabulary flashcards (Leitner spaced repetition, 10 words per session) and 10-question quiz, built automatically from the vocabulary tables.
+- **Pronunciation** buttons (browser speech synthesis) and a daily **streak** badge.
+- **Hash routing**: the phone Back button works and chapters have shareable links (`#chapter/9`).
+- **Backup**: export/import progress, bookmarks and flashcard data as JSON.
+- Service worker now precaches all chapters (full offline) and refreshes them in the background. If you change any file, bump `CACHE` in `sw.js`.
+- Removed the unused duplicate 240-entry vocabulary chapters.
+- **Chapter quizzes** at the end of every lesson (chapters 1–45): 5 questions, 80% auto-completes the chapter. Grammar questions come from a hand-written bank in `quiz.js` plus the “ভুল → সঠিক” pairs in each chapter; vocabulary quizzes are generated from the chapter tables. Best scores are stored in `gp_quiz`.
