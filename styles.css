@@ -44,3 +44,46 @@
 .cq-score{font-size:3rem;font-weight:800;line-height:1.1}
 .cq-score.pass{color:#2ea043}.cq-score.fail{color:#e5534b}
 .opt:disabled{cursor:default}
+
+/* ===== v3 polish ===== */
+/* star only: no background/border box */
+.bookmark,.bookmark:hover,.bookmark.saved,.reader-bookmark,.reader-bookmark.saved,.light .bookmark:hover,.light .bookmark.saved,.light .reader-bookmark.saved{background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+.bookmark{font-size:24px;line-height:1;width:40px;height:40px;color:var(--muted)}
+.bookmark:hover{color:#ffc857}
+.bookmark.saved,.reader-bookmark.saved{color:#ffc857}
+.light .bookmark.saved,.light .reader-bookmark.saved{color:#e0a100}
+.reader-bookmark{min-height:40px;padding:0!important;gap:0}
+/* sidebar scroll isolation */
+.sidebar{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.overlay{overscroll-behavior:contain}
+html.no-scroll,html.no-scroll body{overflow:hidden}
+/* consistent icons */
+.ico{display:block;width:22px;height:22px}
+.side-link>span{display:grid;place-items:center;width:24px;height:24px;flex:none}
+.side-link .ico{width:20px;height:20px}
+.mobile-nav button>span{display:grid;place-items:center;width:28px;height:28px}
+.mobile-nav .ico{width:24px;height:24px}
+.stat-icon{display:grid;place-items:center}.stat-icon .ico{width:22px;height:22px}
+/* buttons spacing */
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+.settings-card{flex-wrap:wrap;gap:14px}
+/* reader font control */
+.fs-ctl{display:inline-flex;gap:8px;margin-left:auto}
+.fs-ctl+.reader-bookmark{margin-left:0}
+.fs-ctl button{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;min-width:38px;height:34px;font-weight:700;font-size:14px}
+.markdown-body{font-size:var(--lesson-fs,16px);line-height:1.85}
+.markdown-body table{font-size:.92em}
+/* larger small text */
+.brand small,.sidebar-bottom small,.side-label,.side-link em,.overall-number span,.chapter-number,.category-info small,footer,.result-count,.progress-category span,.settings-card p,.reader-top,.lesson-meta,.lesson-end p,.stat-card span,.float-chip,.chapter-card-bottom{font-size:12px}
+.eyebrow,.progress-ring small{font-size:11px}
+.mini-progress-top,.text-btn,.open-chapter,.back-btn,.danger-btn,.overall-card p,.chapter-bn,.progress-summary p{font-size:13px}
+.breadcrumb,.install-btn,.category-info b,.progress-category>div:first-child,.settings-card b,.category-nav-item,.toolbar select{font-size:14px}
+.search-box input{font-size:16px}
+.chapter-bn{min-height:24px}
+@media(max-width:760px){
+ .breadcrumb{font-size:12px}.install-btn{font-size:13px;padding:8px 11px}.hero p{font-size:14px}.stat-card span{font-size:12px}
+ .chapter-card-bottom{font-size:12px}.mobile-nav button{font-size:11px}.progress-summary p{font-size:13px}
+}
+.category-nav-item span{font-size:13px;width:26px;height:26px}
+.mobile-nav button{font-size:12px!important}
+.stat-icon{flex:none;width:42px;height:42px;border-radius:12px}

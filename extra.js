@@ -42,7 +42,7 @@ function renderPractice(){
   <section class="stats-grid"><article class="stat-card"><div><strong>${streak()}</strong><span>🔥 দিনের streak</span></div></article><article class="stat-card"><div><strong>${v.length}</strong><span>শেখা শুরু</span></div></article><article class="stat-card"><div><strong>${due}</strong><span>Review বাকি</span></div></article><article class="stat-card"><div><strong>${mastered}</strong><span>মুখস্থ</span></div></article></section>
   <div class="toolbar"><button class="primary-btn" data-p="cards">🗂 Flashcards</button><button class="primary-btn" data-p="quiz">✅ Quiz</button></div>
   <div id="pBody"><div class="empty-state"><h3>শুরু করতে একটি বেছে নাও</h3><p>Flashcard-এ নতুন ও review-এর শব্দ মিলিয়ে ১০টি আসবে।</p></div></div>
-  <div class="settings-card"><div><b>Backup</b><p>Progress, bookmark ও flashcard ডেটা ফাইলে সংরক্ষণ করো বা ফিরিয়ে আনো।</p></div><div><button class="primary-btn" data-p="exportData">Export</button> <button class="primary-btn" data-p="importData">Import</button></div></div>`;
+  <div class="settings-card"><div><b>Backup</b><p>Progress, bookmark ও flashcard ডেটা ফাইলে সংরক্ষণ করো বা ফিরিয়ে আনো।</p></div><div class="btn-row"><button class="primary-btn" data-p="exportData">Export</button> <button class="primary-btn" data-p="importData">Import</button></div></div>`;
 }
 async function cards(){
   const v=await loadVocab(),srs=load(K.srs,{}),now=Date.now();
